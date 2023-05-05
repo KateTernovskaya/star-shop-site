@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    background: #131316;
+}
+
+.background {
+    background-image: url("img/bg.png");
+    background-size: 100%;
+    height: 660px;
+}
+
+
+.header {
+    margin-top: -660px;
+}
+
+.wrapper {
+    width: 620px;
+    margin: 0 auto;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 40px 0;
+    justify-content: space-between;
+}
+
+.header-menu__logo img {
+    width: 120px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.header-menu__button button {
+    height: 40px;
+    background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border: none;
+}
+
+
+.main__title {
+    font-size: 2em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.cards {
+    margin: 20px 0 50px 0;
+}
+
+.cards__min {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.cards__max {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 4px;
+}
+
+
+.cards__min .card__img img {
+    width: 200px;
+    margin: 25px 0;
+}
+
+.cards__max .card__img img {
+    width: 305px;
+    margin: 4px 0;
+}
+
+.cards__max .card__img-min img {
+    margin: 18px 0;
+}
+
+.card__text {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.card__price {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.card__price-old {
+    width: 90px;
+    text-align: center;
+    text-decoration-line: line-through;
+    color: #D9D9D9;
+}
+
+.card__price-new {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #131316;
+    width: 90px;
+}
+
+.card__price__one {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #131316;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.card-button__buy {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.card-button__buy button {
+    width: 90%;
+    height: 40px;
+    background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+    border-radius: 4px;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+}
+
+.ship-of-the-day {
+    background-color: #FFFFFF;
+    margin: 20px 0 60px 0;
+    border-radius: 4px;
+}
+
+.ship-of-the-day__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ship-of-the-day__info__img img {
+    margin: 40px auto 47px -45px;
+}
+
+.ship-of-the-day__info__text {
+    margin: 30px auto 30px -55px;
+}
+
+.hip-of-the-day__info__rate img {
+    height: 30px;
+    margin: 0 0 10px 0;
+}
+
+.ship-of-the-day__info__description {
+    margin: 5px 0 20px 0;
+    width: 295px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.ship-of-the-day__info__price {
+    margin-bottom: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+}
+
+
+.ship-of-the-day__info__price__with-sale {
+    text-decoration-line: line-through;
+    color: #D9D9D9;
+}
+
+.ship-of-the-day__info__price__new-price {
+    font-weight: 700;
+}
+
+.ship-of-the-day__info__price__sale {
+    background: #FF0000;
+    border-radius: 4px;
+    font-weight: 700;
+    width: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.ship-of-the-day__info__sale {
+    width: 240px;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.ship-of-the-day__info__sale-info {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info__sale {
+    color: #FF0000;
+    font-weight: 700;
+}
+
+.ship-of-the-day__info__buy {
+    padding: 0 0 35px 0;
+}
+
+.ship-of-the-day__info__promo {
+    width: 280px;
+    margin: 0 auto 10px auto;
+    border: 1px dashed #131316;
+    border-radius: 4px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ship-of-the-day__info__button-buy button {
+    width: 280px;
+    margin: 0 auto;
+    background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+    border-radius: 4px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    border: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer {
+    color: #FFFFFF;
+}
+
+.social {
+    text-align: center;
+}
+
+.social__title {
+    margin-bottom: 20px;
+}
+
+.social-link img {
+    margin: 0 8px;
+}
+
+.footer__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.contacts__title {
+    font-size: 13px;
+    line-height: 17px;
+    color: #D9D9D9;
+    padding: 2px;
+}
+
+.telephone {
+    line-height: 21px;
+}
+
+.email {
+    line-height: 21px;
+    text-decoration-line: underline;
+}
+
+
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 14px;
+    }
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cards__min, .cards__max {
+        grid-template-columns: 1fr;
+    }
+
+    .card__img {
+        text-align: center;
+    }
+
+    .card__price-old {
+        width: 50%;
+    }
+
+    .card__price-new {
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .ship-of-the-day__info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ship-of-the-day__info__text {
+        margin: 0 auto;
+    }
+
+    .ship-of-the-day__info__price {
+        margin: 0 0 20px 20px;
+    }
+
+    .ship-of-the-day__info__sale {
+        margin: 0 0 20px 20px;
+    }
+
+    .ship-of-the-day__info__buy {
+        padding: 0 0 20px 0;
+    }
+
+    .ship-of-the-day__info__promo {
+        height: 40px;
+    }
+
+    .ship-of-the-day__info__button-buy button {
+        height: 40px;
+    }
+}
